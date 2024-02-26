@@ -36,10 +36,18 @@ a {
   width: 1200px;
 }
 
+.section {
+  padding: 94px, 0, 94px, 0;
+}
 /* Header section */
 .header-section {
   display: flex;
+  align-items: center;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   justify-content: space-around;
+  border-bottom: 1px solid #e7e9fc;
 }
 /* Logo */
 .logo::before {
@@ -70,7 +78,6 @@ a {
 .nav-list {
   display: flex;
   justify-content: space-evenly;
-  margin-block-start: 0;
   width: 261px;
 }
 
@@ -91,10 +98,17 @@ a {
 
 /* Hero section */
 .hero-section {
+  display: block;
+  padding: 200px;
   background-color: var(--footer-bg-color);
+  text-align: center;
 }
 
 .hero-section .hero-title {
+  width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07143;
@@ -103,16 +117,31 @@ a {
 }
 
 /* First section */
+.first-section-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  gap: 24px;
+}
+
 .first-section-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  margin-bottom: -8px;
 }
 .first-section-text {
   color: var(--secondary-text-color);
 }
 
 /* What are we doing */
+.second-section-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding-bottom: 120px;
+}
 .second-section-title {
   font-weight: 700;
   font-size: 36px;
@@ -120,11 +149,15 @@ a {
   text-transform: capitalize;
   text-align: center;
   color: var(--primary-text-color);
+  padding-bottom: 72px;
 }
 
 /* Team section */
 .team-section {
   background-color: #f4f4fd;
+}
+.team-section .team-section-list {
+  display: flex;
 }
 .team-section .team-title {
   font-weight: 700;
@@ -167,6 +200,10 @@ a {
 
 /* Button section */
 .hero-section .hero-button {
+  box-sizing: block;
+  margin: auto;
+  min-width: 200px;
+  height: 50px;
   font-weight: 500;
   letter-spacing: 0.04em;
   color: #fff;
