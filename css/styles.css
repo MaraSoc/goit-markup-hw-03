@@ -1,0 +1,213 @@
+:root {
+  --primary-text-color: #2e2f42;
+  --secondary-text-color: #434455;
+  --primary-bg-color: #ffffff;
+  --footer-bg-color: #2e2f42;
+}
+
+/* General styles */
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+}
+
+/* Header section */
+.header-section {
+  display: flex;
+  justify-content: space-around;
+}
+/* Logo */
+.logo::before {
+  content: "WEB";
+  color: #4d5ae5;
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  color: #2e2f42;
+  font-size: 18px;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
+}
+
+/* Nav section */
+.global-header .main-nav {
+  font-weight: 500;
+}
+.global-header .main-nav a,
+.global-header .main-nav a:visited {
+  color: var(--primary-text-color);
+}
+.global-header .main-nav a:hover {
+  color: #404bbf;
+  text-decoration: underline;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  margin-block-start: 0;
+  width: 261px;
+}
+
+/* Contacts section */
+.global-header .contact-mail {
+  color: var(--secondary-text-color);
+}
+.global-header .contact-mail:hover {
+  color: #404bbf;
+}
+
+.global-header .contact-phone {
+  color: var(--secondary-text-color);
+}
+.global-header .contact-phone:hover {
+  color: #404bbf;
+}
+
+/* Hero section */
+.hero-section {
+  background-color: var(--footer-bg-color);
+}
+
+.hero-section .hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07143;
+  text-align: center;
+  color: #fff;
+}
+
+/* First section */
+.first-section-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.first-section-text {
+  color: var(--secondary-text-color);
+}
+
+/* What are we doing */
+.second-section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+/* Team section */
+.team-section {
+  background-color: #f4f4fd;
+}
+.team-section .team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  text-transform: capitalize;
+  text-align: center;
+}
+.team-section .team-member {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+}
+.team-section .team-member-position {
+  font-size: 16px;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+/* Footer section */
+.logo-footer::before {
+  content: "WEB";
+  color: #4d5ae5;
+}
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
+  color: #f4f4fd;
+}
+.footer-section {
+  background-color: var(--footer-bg-color);
+}
+.footer-section .footer-text {
+  color: #f4f4fd;
+}
+
+/* Button section */
+.hero-section .hero-button {
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
+  cursor: pointer;
+}
+.hero-section .hero-button:hover {
+  background-color: #404bbf;
+}
+.button-section .filter-button {
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #4d5ae5;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  padding: 12px 24px;
+  width: 116px;
+  height: 48px;
+  background: #f4f4fd;
+  cursor: pointer;
+}
+
+.button-section .filter-button:hover {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
+  background: #404bbf;
+  color: #fff;
+}
+
+/* Pictures section */
+.picture-section .picture-section-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.picture-section .picture-section-text {
+  color: var(--secondary-text-color);
+}
