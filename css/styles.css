@@ -42,7 +42,6 @@ a {
 }
 /* Header section */
 .global-header {
-  border-bottom: 1px solid #e7e9fc;
   padding: 24px, 0;
 }
 .header-section {
@@ -52,6 +51,7 @@ a {
   padding-top: 0;
   padding-bottom: 0;
   justify-content: space-around;
+  border-bottom: 1px solid #e7e9fc;
 }
 /* Logo */
 .logo::before {
@@ -82,10 +82,8 @@ a {
 .nav-list {
   display: flex;
   justify-content: space-evenly;
-  width: 261px;
   gap: 40px;
   margin-right: 100px;
-  margin-left: 76px;
 }
 
 /* Contacts section */
@@ -248,7 +246,14 @@ a {
 .hero-section .hero-button:hover {
   background-color: #404bbf;
 }
-.button-section .filter-button {
+.button-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 96px;
+  padding-bottom: 72px;
+  gap: 24px;
+}
+.filter-button {
   font-weight: 500;
   letter-spacing: 0.04em;
   text-align: center;
@@ -256,7 +261,6 @@ a {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   padding: 12px 24px;
-  width: 116px;
   height: 48px;
   background: #f4f4fd;
   cursor: pointer;
@@ -270,11 +274,27 @@ a {
 }
 
 /* Pictures section */
-.picture-section .picture-section-title {
+.picture-section-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding-bottom: 120px;
+}
+.picture-section-card {
+  border: 1px solid #e7e9fc;
+  width: 360px;
+  height: 420px;
+  background: var(--primary-bg-color);
+  overflow: hidden;
+}
+.picture-section-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  margin-left: 16px;
 }
-.picture-section .picture-section-text {
+.picture-section-text {
   color: var(--secondary-text-color);
+  margin-left: 16px;
 }
